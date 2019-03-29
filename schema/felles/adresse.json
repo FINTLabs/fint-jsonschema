@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/felles/adresse.json",
+    "type": "object",
+    "properties": {
+        "adresselinje": {
+            "type": "array",
+				"items": { "type": "string" }
+        },
+        "postnummer": {
+            "type": "string"
+        },
+        "poststed": {
+            "type": "string"
+        },
+
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "land": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "adresselinje",
+
+        "_links"
+    ]
+}

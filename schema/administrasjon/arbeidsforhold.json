@@ -1,0 +1,213 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/administrasjon/arbeidsforhold.json",
+    "type": "object",
+    "properties": {
+        "ansettelsesprosent": {
+            "type": "integer"
+        },
+        "gyldighetsperiode": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+        },
+        "hovedstilling": {
+            "type": "boolean"
+        },
+        "lonnsprosent": {
+            "type": "integer"
+        },
+        "stillingsnummer": {
+            "type": "string"
+        },
+        "stillingstittel": {
+            "type": "string"
+        },
+        "systemId": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "tilstedeprosent": {
+            "type": "integer"
+        },
+        "arslonn": {
+            "type": "integer"
+        },
+
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "ansvar": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "arbeidsforholdstype": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "funksjon": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "stillingskode": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "timerPerUke": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "arbeidssted": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "personalleder": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "fravar": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "lonn": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "personalressurs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "undervisningsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "arbeidssted",
+                "personalressurs",
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "ansettelsesprosent",
+        "gyldighetsperiode",
+        "hovedstilling",
+        "lonnsprosent",
+        "stillingsnummer",
+        "systemId",
+        "tilstedeprosent",
+        "arslonn",
+
+        "_links"
+    ]
+}

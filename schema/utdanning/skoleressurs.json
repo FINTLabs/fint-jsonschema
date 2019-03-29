@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/utdanning/skoleressurs.json",
+    "type": "object",
+    "properties": {
+        "feidenavn": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "systemId": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "personalressurs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "undervisningsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "skole": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "personalressurs",
+                "skole",
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "systemId",
+
+        "_links"
+    ]
+}

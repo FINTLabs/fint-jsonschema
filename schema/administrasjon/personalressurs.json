@@ -1,0 +1,162 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/administrasjon/personalressurs.json",
+    "type": "object",
+    "properties": {
+        "ansattnummer": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "ansettelsesperiode": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+        },
+        "ansiennitet": {
+            "type": "string"
+        },
+        "brukernavn": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "kontaktinformasjon": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
+        },
+        "systemId": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "personalressurskategori": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "arbeidsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "person": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "stedfortreder": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "fullmakt": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "leder": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "personalansvar": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "skoleressurs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "personalressurskategori",
+                "person",
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "ansattnummer",
+        "ansettelsesperiode",
+
+        "_links"
+    ]
+}

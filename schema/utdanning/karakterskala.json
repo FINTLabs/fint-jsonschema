@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/utdanning/karakterskala.json",
+    "type": "object",
+    "properties": {
+
+        "gyldighetsperiode": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+        },
+        "kode": {
+            "type": "string"
+        },
+        "navn": {
+            "type": "string"
+        },
+        "passiv": {
+            "type": "boolean"
+        },
+        "systemId": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "vigoreferanse": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "verdi": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "self"
+            ]
+        }
+    },
+    "required": [
+
+        "kode",
+        "navn",
+        "systemId",
+        "_links"
+    ]
+}

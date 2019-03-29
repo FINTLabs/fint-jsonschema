@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/felles/personnavn.json",
+    "type": "object",
+    "properties": {
+        "etternavn": {
+            "type": "string"
+        },
+        "fornavn": {
+            "type": "string"
+        },
+        "mellomnavn": {
+            "type": "string"
+        },
+
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "etternavn",
+        "fornavn",
+
+        "_links"
+    ]
+}

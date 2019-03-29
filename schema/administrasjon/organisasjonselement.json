@@ -1,0 +1,149 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/administrasjon/organisasjonselement.json",
+    "type": "object",
+    "properties": {
+        "gyldighetsperiode": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+        },
+        "kortnavn": {
+            "type": "string"
+        },
+        "navn": {
+            "type": "string"
+        },
+        "organisasjonsId": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "organisasjonsKode": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+
+        "forretningsadresse": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+        },
+        "organisasjonsnavn": {
+            "type": "string"
+        },
+        "organisasjonsnummer": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "kontaktinformasjon": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
+        },
+        "postadresse": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+        },
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "ansvar": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "leder": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "overordnet": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "underordnet": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "skole": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "arbeidsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "overordnet",
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "organisasjonsId",
+        "organisasjonsKode",
+
+        "_links"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/felles/periode.json",
+    "type": "object",
+    "properties": {
+        "beskrivelse": {
+            "type": "string"
+        },
+        "slutt": {
+            "type": "string"
+        },
+        "start": {
+            "type": "string"
+        },
+
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "start",
+
+        "_links"
+    ]
+}

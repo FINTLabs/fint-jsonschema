@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/administrasjon/fastlonn.json",
+    "type": "object",
+    "properties": {
+        "prosent": {
+            "type": "integer"
+        },
+
+        "anvist": {
+            "type": "string"
+        },
+        "attestert": {
+            "type": "string"
+        },
+        "beskrivelse": {
+            "type": "string"
+        },
+        "kontert": {
+            "type": "string"
+        },
+        "kontostreng": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/administrasjon/kontostreng.json"
+        },
+        "opptjent": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+        },
+        "periode": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+        },
+        "systemId": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "lonnsart": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "anviser": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "konterer": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "attestant": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "arbeidsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "arbeidsforhold",
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "prosent",
+
+        "beskrivelse",
+        "kontostreng",
+        "periode",
+        "_links"
+    ]
+}

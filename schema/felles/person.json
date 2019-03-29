@@ -1,0 +1,151 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://fintlabs.no/schema/felles/person.json",
+    "type": "object",
+    "properties": {
+        "bilde": {
+            "type": "string"
+        },
+        "bostedsadresse": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+        },
+        "fodselsdato": {
+            "type": "string"
+        },
+        "fodselsnummer": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+        },
+        "navn": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/personnavn.json"
+        },
+
+        "kontaktinformasjon": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
+        },
+        "postadresse": {
+            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+        },
+        "_links": {
+            "type": "object",
+            "properties": {
+
+                "statsborgerskap": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "kjonn": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "malform": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "personalressurs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "morsmal": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "parorende": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "elev": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+	
+                "self": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "href": {
+                            "type": "string"
+                        }
+                    }
+            }
+            },
+            "required": [
+
+                "self"
+            ]
+        }
+    },
+    "required": [
+        "fodselsnummer",
+        "navn",
+
+        "_links"
+    ]
+}
