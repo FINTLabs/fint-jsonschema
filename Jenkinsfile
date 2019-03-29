@@ -4,7 +4,9 @@ pipeline {
     }
     stages {
         stage('Build') {
-            sh "docker build --tag ${GIT_COMMIT} ."
+            steps {
+                sh "docker build --tag ${GIT_COMMIT} ."
+            }
         }
         stage('Publish') {
             when {
