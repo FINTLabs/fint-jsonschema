@@ -19,13 +19,16 @@
 
                 "elevforhold": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -35,9 +38,11 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -47,21 +52,26 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
                 "karakter": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -71,9 +81,11 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 }
             },
@@ -83,13 +95,14 @@
                     "type": "object",
                     "properties": {
                         "href": {
-                            "type": "string"
+                            "type": "string",
+                            "format": "uri"
                         }
-                    }
+                    },
+                    "required": [ "href" ]
             }
             },
             "required": [
-
                 "elevforhold",
                 "karakter",
                 "self"

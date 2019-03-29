@@ -16,13 +16,16 @@
 
                 "myndighet": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -32,9 +35,11 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -44,21 +49,26 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
                 "rolle": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -68,9 +78,11 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 }
             },
@@ -80,13 +92,14 @@
                     "type": "object",
                     "properties": {
                         "href": {
-                            "type": "string"
+                            "type": "string",
+                            "format": "uri"
                         }
-                    }
+                    },
+                    "required": [ "href" ]
             }
             },
             "required": [
-
                 "myndighet",
                 "rolle",
                 "self"

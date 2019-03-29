@@ -16,13 +16,16 @@
 
                 "personalressurs": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -32,21 +35,26 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
                 "skole": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 },
 	
@@ -56,9 +64,11 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 }
             },
@@ -68,13 +78,14 @@
                     "type": "object",
                     "properties": {
                         "href": {
-                            "type": "string"
+                            "type": "string",
+                            "format": "uri"
                         }
-                    }
+                    },
+                    "required": [ "href" ]
             }
             },
             "required": [
-
                 "personalressurs",
                 "skole",
                 "self"

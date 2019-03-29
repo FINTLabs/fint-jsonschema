@@ -32,9 +32,11 @@
                         "type": "object",
                         "properties": {
                             "href": {
-                                "type": "string"
+                                "type": "string",
+                                "format": "uri"
                             }
-                        }
+                        },
+                        "required": [ "href" ]
                     }
                 }
             },
@@ -44,13 +46,14 @@
                     "type": "object",
                     "properties": {
                         "href": {
-                            "type": "string"
+                            "type": "string",
+                            "format": "uri"
                         }
-                    }
+                    },
+                    "required": [ "href" ]
             }
             },
             "required": [
-
                 "self"
             ]
         }
