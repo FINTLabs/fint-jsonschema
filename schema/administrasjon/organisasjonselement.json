@@ -141,9 +141,8 @@
         }
     },
     "required": [
-        "organisasjonsId",
-        "organisasjonsKode",
-
+        "organisasjonsId", 
+        "organisasjonsKode", 
         "_links"
     ]
 }

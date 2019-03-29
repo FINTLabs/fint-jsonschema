@@ -154,9 +154,8 @@
         }
     },
     "required": [
-        "ansattnummer",
-        "ansettelsesperiode",
-
+        "ansattnummer", 
+        "ansettelsesperiode", 
         "_links"
     ]
 }

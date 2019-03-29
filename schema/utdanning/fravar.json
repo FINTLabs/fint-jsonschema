@@ -103,12 +103,11 @@
         }
     },
     "required": [
-        "dokumentert",
-        "foresPaVitnemal",
-        "gjelderPeriode",
-        "kommentar",
-        "systemId",
-
+        "dokumentert", 
+        "foresPaVitnemal", 
+        "gjelderPeriode", 
+        "kommentar", 
+        "systemId", 
         "_links"
     ]
 }

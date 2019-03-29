@@ -44,8 +44,6 @@
         }
     },
     "required": [
-        "identifikatorverdi",
-
-        "_links"
+        "identifikatorverdi"
     ]
 }

@@ -53,7 +53,5 @@
         }
     },
     "required": [
-
-        "_links"
     ]
 }

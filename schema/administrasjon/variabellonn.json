@@ -130,11 +130,10 @@
         }
     },
     "required": [
-        "antall",
-
-        "beskrivelse",
-        "kontostreng",
-        "periode",
+        "antall", 
+        "beskrivelse", 
+        "kontostreng", 
+        "periode", 
         "_links"
     ]
 }

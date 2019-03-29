@@ -94,9 +94,8 @@
         }
     },
     "required": [
-        "gyldighetsperiode",
-        "systemId",
-
+        "gyldighetsperiode", 
+        "systemId", 
         "_links"
     ]
 }

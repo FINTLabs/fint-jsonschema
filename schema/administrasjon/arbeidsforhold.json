@@ -199,15 +199,14 @@
         }
     },
     "required": [
-        "ansettelsesprosent",
-        "gyldighetsperiode",
-        "hovedstilling",
-        "lonnsprosent",
-        "stillingsnummer",
-        "systemId",
-        "tilstedeprosent",
-        "arslonn",
-
+        "ansettelsesprosent", 
+        "gyldighetsperiode", 
+        "hovedstilling", 
+        "lonnsprosent", 
+        "stillingsnummer", 
+        "systemId", 
+        "tilstedeprosent", 
+        "arslonn", 
         "_links"
     ]
 }

@@ -89,7 +89,5 @@
         }
     },
     "required": [
-
-        "_links"
     ]
 }

@@ -143,9 +143,8 @@
         }
     },
     "required": [
-        "fodselsnummer",
-        "navn",
-
+        "fodselsnummer", 
+        "navn", 
         "_links"
     ]
 }

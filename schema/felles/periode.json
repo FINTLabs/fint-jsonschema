@@ -47,8 +47,6 @@
         }
     },
     "required": [
-        "start",
-
-        "_links"
+        "start"
     ]
 }

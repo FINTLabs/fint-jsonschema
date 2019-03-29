@@ -111,11 +111,10 @@
         }
     },
     "required": [
-
-        "beskrivelse",
-        "navn",
-        "periode",
-        "systemId",
+        "beskrivelse", 
+        "navn", 
+        "periode", 
+        "systemId", 
         "_links"
     ]
 }

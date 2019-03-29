@@ -82,8 +82,7 @@
         }
     },
     "required": [
-        "systemId",
-
+        "systemId", 
         "_links"
     ]
 }

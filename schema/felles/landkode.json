@@ -53,10 +53,9 @@
         }
     },
     "required": [
-
-        "kode",
-        "navn",
-        "systemId",
+        "kode", 
+        "navn", 
+        "systemId", 
         "_links"
     ]
 }

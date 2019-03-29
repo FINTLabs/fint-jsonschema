@@ -97,10 +97,9 @@
         }
     },
     "required": [
-        "endelig",
-        "kommentar",
-        "systemId",
-
+        "endelig", 
+        "kommentar", 
+        "systemId", 
         "_links"
     ]
 }

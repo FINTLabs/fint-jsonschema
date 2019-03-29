@@ -126,11 +126,10 @@
         }
     },
     "required": [
-        "prosent",
-
-        "beskrivelse",
-        "kontostreng",
-        "periode",
+        "prosent", 
+        "beskrivelse", 
+        "kontostreng", 
+        "periode", 
         "_links"
     ]
 }

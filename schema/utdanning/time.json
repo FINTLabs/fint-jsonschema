@@ -88,10 +88,9 @@
         }
     },
     "required": [
-        "navn",
-        "systemId",
-        "tidsrom",
-
+        "navn", 
+        "systemId", 
+        "tidsrom", 
         "_links"
     ]
 }

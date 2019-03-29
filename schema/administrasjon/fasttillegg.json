@@ -127,11 +127,10 @@
         }
     },
     "required": [
-        "belop",
-
-        "beskrivelse",
-        "kontostreng",
-        "periode",
+        "belop", 
+        "beskrivelse", 
+        "kontostreng", 
+        "periode", 
         "_links"
     ]
 }

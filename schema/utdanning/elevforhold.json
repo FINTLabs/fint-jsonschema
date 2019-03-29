@@ -166,9 +166,8 @@
         }
     },
     "required": [
-
-        "beskrivelse",
-        "systemId",
+        "beskrivelse", 
+        "systemId", 
         "_links"
     ]
 }

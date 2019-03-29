@@ -72,10 +72,9 @@
         }
     },
     "required": [
-        "foreldreansvar",
-        "systemId",
-        "type",
-
+        "foreldreansvar", 
+        "systemId", 
+        "type", 
         "_links"
     ]
 }

@@ -212,10 +212,9 @@
         }
     },
     "required": [
-        "navn",
-        "skolenummer",
-        "systemId",
-
+        "navn", 
+        "skolenummer", 
+        "systemId", 
         "_links"
     ]
 }

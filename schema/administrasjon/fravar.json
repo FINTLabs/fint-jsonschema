@@ -109,9 +109,8 @@
         }
     },
     "required": [
-        "periode",
-        "prosent",
-
+        "periode", 
+        "prosent", 
         "_links"
     ]
 }

@@ -57,9 +57,8 @@
         }
     },
     "required": [
-        "beskrivelse",
-        "navn",
-
+        "beskrivelse", 
+        "navn", 
         "_links"
     ]
 }
