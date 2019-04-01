@@ -1,4 +1,5 @@
 {
+    "$comment": "Version: v3.1.0 generated at 2019-04-01T15:16:39+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/utdanning/elevkategori.json",
     "type": "object",
