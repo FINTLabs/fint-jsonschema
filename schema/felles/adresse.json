@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.1.0 generated at 2019-04-01T15:16:39+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:40+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/felles/adresse.json",
     "type": "object",
@@ -35,6 +35,7 @@
 	
                 "self": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {

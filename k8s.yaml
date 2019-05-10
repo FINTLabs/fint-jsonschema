@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: json-schema
-        image: fintlabs.azurecr.io/json-schema:build.5
+        image: fintlabs.azurecr.io/json-schema:build.8
         resources:
           limits:
             memory: "128Mi"

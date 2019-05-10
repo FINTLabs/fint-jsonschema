@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.1.0 generated at 2019-04-01T15:16:39+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:41+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/utdanning/skoleressurs.json",
     "type": "object",
@@ -46,7 +46,6 @@
 	
                 "skole": {
                     "type": "array",
-                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -61,6 +60,7 @@
 	
                 "self": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -88,7 +88,6 @@
             },
             "required": [
                 "personalressurs",
-                "skole",
                 "self"
             ]
         }
