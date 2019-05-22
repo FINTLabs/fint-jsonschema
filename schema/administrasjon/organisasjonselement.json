@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:41+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/administrasjon/organisasjonselement.json",
     "type": "object",
@@ -19,7 +19,6 @@
         "organisasjonsKode": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
         },
-
         "forretningsadresse": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
         },
@@ -38,7 +37,6 @@
         "_links": {
             "type": "object",
             "properties": {
-
                 "ansvar": {
                     "type": "array",
                     "items": {
@@ -51,10 +49,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "leder": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -65,11 +63,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "overordnet": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -80,8 +78,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "underordnet": {
                     "type": "array",
                     "items": {
@@ -94,10 +91,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "skole": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -108,8 +105,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "arbeidsforhold": {
                     "type": "array",
                     "items": {
@@ -122,11 +118,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "self": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -150,10 +146,10 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
-                "overordnet",
+                "overordnet", 
                 "self"
             ]
         }

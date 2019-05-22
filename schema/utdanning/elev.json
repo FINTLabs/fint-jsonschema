@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:41+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/utdanning/elev.json",
     "type": "object",
@@ -19,14 +19,13 @@
         "systemId": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
         },
-
         "_links": {
             "type": "object",
             "properties": {
-
                 "person": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -37,8 +36,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "elevforhold": {
                     "type": "array",
                     "items": {
@@ -51,11 +49,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "self": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -79,10 +77,10 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
-                "person",
+                "person", 
                 "self"
             ]
         }

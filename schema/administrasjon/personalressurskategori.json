@@ -1,10 +1,9 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:41+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/administrasjon/personalressurskategori.json",
     "type": "object",
     "properties": {
-
         "gyldighetsperiode": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
         },
@@ -23,21 +22,6 @@
         "_links": {
             "type": "object",
             "properties": {
-
-                "self": {
-                    "type": "array",
-                    "minItems": 1,
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "href": {
-                                "type": "string",
-                                "format": "uri"
-                            }
-                        },
-                        "required": [ "href" ]
-                    }
-                }
             },
             "additionalProperties": {
                 "type": "array",
@@ -50,10 +34,9 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
-                "self"
             ]
         }
     },

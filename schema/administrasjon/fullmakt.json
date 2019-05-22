@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:40+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/administrasjon/fullmakt.json",
     "type": "object",
@@ -10,11 +10,9 @@
         "systemId": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
         },
-
         "_links": {
             "type": "object",
             "properties": {
-
                 "myndighet": {
                     "type": "array",
                     "minItems": 1,
@@ -28,10 +26,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "stedfortreder": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -42,10 +40,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "fullmektig": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -56,11 +54,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "rolle": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -71,11 +69,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "self": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -99,11 +97,11 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
-                "myndighet",
-                "rolle",
+                "myndighet", 
+                "rolle", 
                 "self"
             ]
         }

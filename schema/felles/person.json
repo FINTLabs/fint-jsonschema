@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:40+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/felles/person.json",
     "type": "object",
@@ -19,7 +19,6 @@
         "navn": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/personnavn.json"
         },
-
         "kontaktinformasjon": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
         },
@@ -29,7 +28,6 @@
         "_links": {
             "type": "object",
             "properties": {
-
                 "statsborgerskap": {
                     "type": "array",
                     "items": {
@@ -42,10 +40,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "kjonn": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -56,8 +54,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "foreldreansvar": {
                     "type": "array",
                     "items": {
@@ -70,10 +67,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "malform": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -84,10 +81,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "personalressurs": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -98,10 +95,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "morsmal": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -112,8 +109,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "parorende": {
                     "type": "array",
                     "items": {
@@ -126,8 +122,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "foreldre": {
                     "type": "array",
                     "items": {
@@ -140,10 +135,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "elev": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -154,11 +149,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "self": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -182,7 +177,7 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
                 "self"

@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:41+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/administrasjon/personalressurs.json",
     "type": "object",
@@ -22,14 +22,13 @@
         "systemId": {
             "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
         },
-
         "_links": {
             "type": "object",
             "properties": {
-
                 "personalressurskategori": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -40,8 +39,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "arbeidsforhold": {
                     "type": "array",
                     "items": {
@@ -54,11 +52,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "person": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -69,8 +67,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "stedfortreder": {
                     "type": "array",
                     "items": {
@@ -83,8 +80,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "fullmakt": {
                     "type": "array",
                     "items": {
@@ -97,8 +93,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "leder": {
                     "type": "array",
                     "items": {
@@ -111,8 +106,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "personalansvar": {
                     "type": "array",
                     "items": {
@@ -125,10 +119,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "skoleressurs": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -139,11 +133,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "self": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -167,11 +161,11 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
-                "personalressurskategori",
-                "person",
+                "personalressurskategori", 
+                "person", 
                 "self"
             ]
         }

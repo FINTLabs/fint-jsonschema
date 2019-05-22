@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-10T10:19:41+02:00",
+    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://fintlabs.no/schema/administrasjon/arbeidsforhold.json",
     "type": "object",
@@ -31,13 +31,12 @@
         "arslonn": {
             "type": "integer"
         },
-
         "_links": {
             "type": "object",
             "properties": {
-
                 "ansvar": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -48,10 +47,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "arbeidsforholdstype": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -62,10 +61,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "art": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -76,10 +75,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "funksjon": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -90,10 +89,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "stillingskode": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -104,10 +103,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "timerPerUke": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -118,11 +117,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "arbeidssted": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -133,10 +132,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "personalleder": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -147,8 +146,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "fastlonn": {
                     "type": "array",
                     "items": {
@@ -161,8 +159,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "fasttillegg": {
                     "type": "array",
                     "items": {
@@ -175,8 +172,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "fravar": {
                     "type": "array",
                     "items": {
@@ -189,8 +185,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "lonn": {
                     "type": "array",
                     "items": {
@@ -203,8 +198,7 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "variabellonn": {
                     "type": "array",
                     "items": {
@@ -217,11 +211,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "personalressurs": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -232,10 +226,10 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "undervisningsforhold": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -246,11 +240,11 @@
                         },
                         "required": [ "href" ]
                     }
-                },
-	
+                }, 
                 "self": {
                     "type": "array",
                     "minItems": 1,
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -274,11 +268,11 @@
                         }
                     },
                     "required": [ "href" ]
-            }
+                }
             },
             "required": [
-                "arbeidssted",
-                "personalressurs",
+                "arbeidssted", 
+                "personalressurs", 
                 "self"
             ]
         }
