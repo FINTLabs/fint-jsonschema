@@ -1,7 +1,7 @@
 {
     "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://schema.fintlabs.no/administrasjon/fravarsgrunn.json",
+    "$id": "https://schema.fintlabs.no/administrasjon/objekt.json",
     "type": "object",
     "properties": {
         "gyldighetsperiode": {
@@ -22,6 +22,34 @@
         "_links": {
             "type": "object",
             "properties": {
+                "fullmakt": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "self": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }
             },
             "additionalProperties": {
                 "type": "array",
@@ -37,6 +65,7 @@
                 }
             },
             "required": [
+                "self"
             ]
         }
     },

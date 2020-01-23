@@ -1,14 +1,17 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
+    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://fintlabs.no/schema/administrasjon/arbeidsforhold.json",
+    "$id": "https://schema.fintlabs.no/administrasjon/arbeidsforhold.json",
     "type": "object",
     "properties": {
         "ansettelsesprosent": {
             "type": "integer"
         },
+        "arslonn": {
+            "type": "integer"
+        },
         "gyldighetsperiode": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/periode.json"
         },
         "hovedstilling": {
             "type": "boolean"
@@ -23,12 +26,9 @@
             "type": "string"
         },
         "systemId": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "tilstedeprosent": {
-            "type": "integer"
-        },
-        "arslonn": {
             "type": "integer"
         },
         "_links": {
@@ -279,13 +279,13 @@
     },
     "required": [
         "ansettelsesprosent", 
+        "arslonn", 
         "gyldighetsperiode", 
         "hovedstilling", 
         "lonnsprosent", 
         "stillingsnummer", 
         "systemId", 
         "tilstedeprosent", 
-        "arslonn", 
         "_links"
     ]
 }

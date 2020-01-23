@@ -1,7 +1,7 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
+    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://fintlabs.no/schema/utdanning/vigoreferanse.json",
+    "$id": "https://schema.fintlabs.no/utdanning/vigoreferanse.json",
     "type": "object",
     "properties": {
         "_links": {

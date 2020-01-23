@@ -1,12 +1,40 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
+    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://fintlabs.no/schema/administrasjon/kontostreng.json",
+    "$id": "https://schema.fintlabs.no/administrasjon/kontostreng.json",
     "type": "object",
     "properties": {
         "_links": {
             "type": "object",
             "properties": {
+                "aktivitet": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "anlegg": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
                 "ansvar": {
                     "type": "array",
                     "minItems": 1,
@@ -37,6 +65,20 @@
                         "required": [ "href" ]
                     }
                 }, 
+                "diverse": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
                 "funksjon": {
                     "type": "array",
                     "minItems": 1,
@@ -52,7 +94,63 @@
                         "required": [ "href" ]
                     }
                 }, 
+                "kontrakt": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "lopenummer": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "objekt": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
                 "prosjekt": {
+                    "type": "array",
+                    "maxItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "ramme": {
                     "type": "array",
                     "maxItems": 1,
                     "items": {

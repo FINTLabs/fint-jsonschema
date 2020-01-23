@@ -1,29 +1,29 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
+    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://fintlabs.no/schema/felles/person.json",
+    "$id": "https://schema.fintlabs.no/felles/person.json",
     "type": "object",
     "properties": {
         "bilde": {
             "type": "string"
         },
         "bostedsadresse": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/adresse.json"
         },
         "fodselsdato": {
             "type": "string", "format": "date-time"
         },
         "fodselsnummer": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "navn": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/personnavn.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/personnavn.json"
         },
         "kontaktinformasjon": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/kontaktinformasjon.json"
         },
         "postadresse": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/adresse.json"
         },
         "_links": {
             "type": "object",
