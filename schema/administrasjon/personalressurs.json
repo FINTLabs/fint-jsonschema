@@ -1,26 +1,26 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
+    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://fintlabs.no/schema/administrasjon/personalressurs.json",
+    "$id": "https://schema.fintlabs.no/administrasjon/personalressurs.json",
     "type": "object",
     "properties": {
         "ansattnummer": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "ansettelsesperiode": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/periode.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/periode.json"
         },
         "ansiennitet": {
             "type": "string", "format": "date-time"
         },
         "brukernavn": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "kontaktinformasjon": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/kontaktinformasjon.json"
         },
         "systemId": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "_links": {
             "type": "object",

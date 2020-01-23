@@ -1,7 +1,7 @@
 {
-    "$comment": "Version: v3.2.0 generated at 2019-05-22T10:01:31+02:00",
+    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://fintlabs.no/schema/utdanning/skole.json",
+    "$id": "https://schema.fintlabs.no/utdanning/skole.json",
     "type": "object",
     "properties": {
         "domenenavn": {
@@ -14,25 +14,25 @@
             "type": "string"
         },
         "skolenummer": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "systemId": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "forretningsadresse": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/adresse.json"
         },
         "organisasjonsnavn": {
             "type": "string"
         },
         "organisasjonsnummer": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/identifikator.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/identifikator.json"
         },
         "kontaktinformasjon": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/kontaktinformasjon.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/kontaktinformasjon.json"
         },
         "postadresse": {
-            "type": "object", "$ref": "https://fintlabs.no/schema/felles/adresse.json"
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/adresse.json"
         },
         "_links": {
             "type": "object",
