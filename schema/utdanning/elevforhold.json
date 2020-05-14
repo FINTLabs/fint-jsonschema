@@ -1,9 +1,15 @@
 {
-    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
+    "$comment": "Version: v3.5.0 generated at 2020-05-14T11:35:11+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://schema.fintlabs.no/utdanning/elevforhold.json",
     "type": "object",
     "properties": {
+        "gyldighetsperiode": {
+            "type": "object", "$ref": "https://schema.fintlabs.no/felles/periode.json"
+        },
+        "hovedskole": {
+            "type": "boolean"
+        },
         "beskrivelse": {
             "type": "string"
         },
@@ -13,19 +19,6 @@
         "_links": {
             "type": "object",
             "properties": {
-                "basisgruppe": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "href": {
-                                "type": "string",
-                                "format": "uri"
-                            }
-                        },
-                        "required": [ "href" ]
-                    }
-                }, 
                 "elev": {
                     "type": "array",
                     "minItems": 1,
@@ -70,7 +63,46 @@
                         "required": [ "href" ]
                     }
                 }, 
-                "eksamensgruppe": {
+                "basisgruppe": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "basisgruppemedlemskap": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "undervisningsgruppemedlemskap": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "vurdering": {
                     "type": "array",
                     "items": {
                         "type": "object",
@@ -84,6 +116,32 @@
                     }
                 }, 
                 "kontaktlarergruppe": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "eksamensgruppemedlemskap": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "kontaktlarergruppemedlemskap": {
                     "type": "array",
                     "items": {
                         "type": "object",
@@ -110,33 +168,46 @@
                         "required": [ "href" ]
                     }
                 }, 
-                "undervisningsgruppe": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "href": {
-                                "type": "string",
-                                "format": "uri"
-                            }
-                        },
-                        "required": [ "href" ]
-                    }
-                }, 
-                "vurdering": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "href": {
-                                "type": "string",
-                                "format": "uri"
-                            }
-                        },
-                        "required": [ "href" ]
-                    }
-                }, 
                 "fravar": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "programomrademedlemskap": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "eksamensgruppe": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "undervisningsgruppe": {
                     "type": "array",
                     "items": {
                         "type": "object",
@@ -165,7 +236,6 @@
                 "self": {
                     "type": "array",
                     "minItems": 1,
-                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {

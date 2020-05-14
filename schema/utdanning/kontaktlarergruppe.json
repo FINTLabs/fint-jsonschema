@@ -1,5 +1,5 @@
 {
-    "$comment": "Version: v3.4.0 generated at 2020-01-23T11:00:02+01:00",
+    "$comment": "Version: v3.5.0 generated at 2020-05-14T11:35:11+02:00",
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://schema.fintlabs.no/utdanning/kontaktlarergruppe.json",
     "type": "object",
@@ -34,6 +34,32 @@
                         "required": [ "href" ]
                     }
                 }, 
+                "elevforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "termin": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
                 "skole": {
                     "type": "array",
                     "minItems": 1,
@@ -49,8 +75,9 @@
                         "required": [ "href" ]
                     }
                 }, 
-                "elevforhold": {
+                "skolear": {
                     "type": "array",
+                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -63,6 +90,19 @@
                     }
                 }, 
                 "undervisningsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "href": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [ "href" ]
+                    }
+                }, 
+                "gruppemedlemskap": {
                     "type": "array",
                     "items": {
                         "type": "object",
@@ -119,7 +159,6 @@
                 "self": {
                     "type": "array",
                     "minItems": 1,
-                    "maxItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
