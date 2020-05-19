@@ -1,7 +1,7 @@
 {
     "$comment": "Version: v3.5.0 generated at 2020-05-14T11:35:11+02:00",
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://schema.fintlabs.no/administrasjon/objekt.json",
+    "$id": "https://schema.fintlabs.no/utdanning/skolear.json",
     "type": "object",
     "properties": {
         "gyldighetsperiode": {
@@ -22,33 +22,6 @@
         "_links": {
             "type": "object",
             "properties": {
-                "fullmakt": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "href": {
-                                "type": "string",
-                                "format": "uri"
-                            }
-                        },
-                        "required": [ "href" ]
-                    }
-                }, 
-                "self": {
-                    "type": "array",
-                    "minItems": 1,
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "href": {
-                                "type": "string",
-                                "format": "uri"
-                            }
-                        },
-                        "required": [ "href" ]
-                    }
-                }
             },
             "additionalProperties": {
                 "type": "array",
@@ -64,7 +37,6 @@
                 }
             },
             "required": [
-                "self"
             ]
         }
     },
