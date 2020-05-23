@@ -1,4 +1,5 @@
-FROM fint/jsonschema-generator:1.0.0-rc-1 AS builder
+FROM fint/jsonschema-generator:1.0.0 AS builder
+ARG TAG_NAME
 WORKDIR /
 RUN ["/usr/bin/fint-jsonschema-generator", "generate"]
 
