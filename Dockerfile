@@ -3,5 +3,5 @@ ARG TAG_NAME
 WORKDIR /
 RUN ["/usr/bin/fint-jsonschema-generator", "generate"]
 
-FROM fintlabsacr.azurecr.io/nginx:1.15.10-1
+FROM fintlabsacr.azurecr.io/nginx:1.17.6-5
 COPY --from=builder /json/schema/ /etc/nginx/html/
