@@ -4,4 +4,4 @@ WORKDIR /
 RUN ["/usr/bin/fint-jsonschema-generator", "generate"]
 
 FROM fintlabsacr.azurecr.io/nginx:1.17.6-5
-COPY --from=builder /json/schema/ /etc/nginx/html/
+COPY --from=builder /json/schema/ /html/
