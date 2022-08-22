@@ -27,8 +27,8 @@ jobs:
 
       - name: Building the container
         run: |
-          docker build --tag ${{env.REPO_NAME}}:${{env.MODEL_VERSION}} .
+          docker build --tag ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}} .
 
       - name: Push the container to Azure Container Registry (ACR)
         run: |
-          docker push ${{env.REPO_NAME}}:${{env.MODEL_VERSION}}
+          docker push ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}}
