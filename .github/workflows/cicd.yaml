@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY_NAME: fintlabsacr
-  MODEL_VERSION: '3.10.0'
+  MODEL_VERSION: 3.10.0
 
 jobs:
   build-and-publish:
@@ -27,8 +27,8 @@ jobs:
 
       - name: Building the container
         run: |
-          docker build --tag ${{env.REPO_NAME}} --build-arg TAG_NAME=v${{MODEL_VERSION}} .
+          docker build --tag ${{env.REPO_NAME}} --build-arg TAG_NAME=v${{env.MODEL_VERSION}} .
 
       - name: Push the container to Azure Container Registry (ACR)
         run: |
-          docker push ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{MODEL_VERSION}}-${{github.sha}}
+          docker push ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}}-${{github.sha}}
