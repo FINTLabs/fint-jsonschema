@@ -31,4 +31,4 @@ jobs:
 
       - name: Push the container to Azure Container Registry (ACR)
         run: |
-          docker push ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}}-${{github.sha}}
+          docker push ${{env.REPO_NAME}}:${{env.MODEL_VERSION}}-${{github.sha}}
