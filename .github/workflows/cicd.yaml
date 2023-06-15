@@ -1,13 +1,13 @@
 name: CI/CD
 on:
   push:
-    branches:
-      - master
+#    branches:
+#      - master
   workflow_dispatch:
 
 env:
   REGISTRY_NAME: fintlabsacr
-  MODEL_VERSION: 3.14.0
+  MODEL_VERSION: 3.14.10
 
 jobs:
   build-and-publish:
@@ -27,8 +27,8 @@ jobs:
 
       - name: Building the container
         run: |
-          docker build --tag ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}} .
+          docker build --tag ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}} --build-arg TAG_NAME=v${{env.MODEL_VERSION}} .
 
-      - name: Push the container to Azure Container Registry (ACR)
-        run: |
-          docker push ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}}
+#      - name: Push the container to Azure Container Registry (ACR)
+#        run: |
+#          docker push ${{env.REGISTRY_NAME}}.azurecr.io/${{env.REPO_NAME}}:${{env.MODEL_VERSION}}
